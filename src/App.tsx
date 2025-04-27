@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function FreedomQuiz() {
   const questions = [
+    // Chủ đề: Tài chính tự do
     {
       key: "q1",
       question: "Bạn có thể duy trì mức sống hiện tại trong bao lâu nếu ngừng làm việc ngay ngày mai?",
@@ -15,35 +16,6 @@ export default function FreedomQuiz() {
     },
     {
       key: "q2",
-      question: "Bao nhiêu % thời gian hàng ngày bạn dành cho những công việc bạn thực sự muốn làm?",
-      options: [
-        { text: "Dưới 20%", value: 0 },
-        { text: "20%–50%", value: 4 },
-        { text: "50%–80%", value: 7 },
-        { text: "Trên 80%", value: 10 },
-      ],
-    },
-    {
-      key: "q3",
-      question: "Công việc hiện tại của bạn đem lại cho bạn cảm giác nào?",
-      options: [
-        { text: "Làm chỉ để kiếm sống", value: 0 },
-        { text: "Hợp kỹ năng nhưng không yêu thích", value: 4 },
-        { text: "Làm vì đam mê, dù có khó khăn", value: 7 },
-        { text: "Đam mê và được trả công xứng đáng", value: 10 },
-      ],
-    },
-    {
-      key: "q4",
-      question: "Bạn cảm thấy thế nào khi bày tỏ suy nghĩ thật?",
-      options: [
-        { text: "Rất sợ, luôn phải giấu kín", value: 0 },
-        { text: "Phải lựa lời cẩn thận mới dám nói", value: 5 },
-        { text: "Tự tin thể hiện ý tưởng", value: 10 },
-      ],
-    },
-    {
-      key: "q5",
       question: "Bạn có nguồn thu nhập thụ động nào không?",
       options: [
         { text: "Không có", value: 0 },
@@ -51,35 +23,10 @@ export default function FreedomQuiz() {
         { text: "Nhiều nguồn đáng kể", value: 10 },
       ],
     },
+
+    // Chủ đề: Kiểm soát thời gian
     {
-      key: "q6",
-      question: "Mức độ tự chủ tài chính của bạn hiện tại?",
-      options: [
-        { text: "Phụ thuộc hoàn toàn vào công việc", value: 0 },
-        { text: "Đang xây dựng tự chủ", value: 5 },
-        { text: "Đã tự chủ hoàn toàn", value: 10 },
-      ],
-    },
-    {
-      key: "q7",
-      question: "Bạn có đang chủ động học hỏi kỹ năng mới?",
-      options: [
-        { text: "Rất ít hoặc không", value: 0 },
-        { text: "Thi thoảng", value: 5 },
-        { text: "Liên tục và có kế hoạch", value: 10 },
-      ],
-    },
-    {
-      key: "q8",
-      question: "Bạn cảm thấy thế nào về việc thử nghiệm những ý tưởng mới?",
-      options: [
-        { text: "Rất ngại", value: 0 },
-        { text: "Cân nhắc kỹ mới thử", value: 5 },
-        { text: "Hào hứng đón nhận", value: 10 },
-      ],
-    },
-    {
-      key: "q9",
+      key: "q3",
       question: "Mức độ bạn kiểm soát lịch trình làm việc của mình?",
       options: [
         { text: "Không kiểm soát được", value: 0 },
@@ -88,43 +35,7 @@ export default function FreedomQuiz() {
       ],
     },
     {
-      key: "q10",
-      question: "Bạn dành bao nhiêu thời gian mỗi tuần cho sở thích cá nhân?",
-      options: [
-        { text: "Ít hơn 5 giờ", value: 0 },
-        { text: "5–10 giờ", value: 5 },
-        { text: "Hơn 10 giờ", value: 10 },
-      ],
-    },
-    {
-      key: "q11",
-      question: "Bạn có cảm thấy mình đang sống cuộc đời do chính mình chọn không?",
-      options: [
-        { text: "Hoàn toàn không", value: 0 },
-        { text: "Một phần", value: 5 },
-        { text: "Rõ ràng là có", value: 10 },
-      ],
-    },
-    {
-      key: "q12",
-      question: "Bạn đánh giá mức độ tự do trong các mối quan hệ xã hội của mình?",
-      options: [
-        { text: "Bị chi phối nhiều", value: 0 },
-        { text: "Có chọn lọc", value: 5 },
-        { text: "Rất tự do", value: 10 },
-      ],
-    },
-    {
-      key: "q13",
-      question: "Bạn cảm thấy thế nào khi đối diện với rủi ro?",
-      options: [
-        { text: "Tránh né", value: 0 },
-        { text: "Cân nhắc kỹ", value: 5 },
-        { text: "Chấp nhận và học hỏi", value: 10 },
-      ],
-    },
-    {
-      key: "q14",
+      key: "q4",
       question: "Bạn có thể dễ dàng nghỉ ngơi khi cảm thấy cần thiết không?",
       options: [
         { text: "Không thể", value: 0 },
@@ -132,17 +43,19 @@ export default function FreedomQuiz() {
         { text: "Dễ dàng", value: 10 },
       ],
     },
+
+    // Chủ đề: Phát triển cá nhân
     {
-      key: "q15",
-      question: "Bạn có xây dựng hệ thống thay thế bản thân trong công việc?",
+      key: "q5",
+      question: "Bạn có đang chủ động học hỏi kỹ năng mới?",
       options: [
-        { text: "Chưa có", value: 0 },
-        { text: "Đang xây dựng", value: 5 },
-        { text: "Đã có hệ thống hoàn chỉnh", value: 10 },
+        { text: "Rất ít hoặc không", value: 0 },
+        { text: "Thi thoảng", value: 5 },
+        { text: "Liên tục và có kế hoạch", value: 10 },
       ],
     },
     {
-      key: "q16",
+      key: "q6",
       question: "Bạn đã từng đạt được mục tiêu lớn tự đặt ra cho bản thân?",
       options: [
         { text: "Chưa bao giờ", value: 0 },
@@ -150,44 +63,28 @@ export default function FreedomQuiz() {
         { text: "Nhiều lần", value: 10 },
       ],
     },
+
+    // Chủ đề: Tư duy tự do
     {
-      key: "q17",
-      question: "Bạn đang làm việc vì...",
+      key: "q7",
+      question: "Bạn cảm thấy thế nào về việc thử nghiệm những ý tưởng mới?",
       options: [
-        { text: "Sự sinh tồn", value: 0 },
-        { text: "Sự phát triển cá nhân", value: 5 },
-        { text: "Sứ mệnh cao cả hơn", value: 10 },
+        { text: "Rất ngại", value: 0 },
+        { text: "Cân nhắc kỹ mới thử", value: 5 },
+        { text: "Hào hứng đón nhận", value: 10 },
       ],
     },
     {
-      key: "q18",
-      question: "Bạn có lường trước được hậu quả của các quyết định tài chính lớn?",
+      key: "q8",
+      question: "Bạn cảm thấy thế nào khi bày tỏ suy nghĩ thật?",
       options: [
-        { text: "Không rõ", value: 0 },
-        { text: "Tương đối", value: 5 },
-        { text: "Rất rõ ràng", value: 10 },
-      ],
-    },
-    {
-      key: "q19",
-      question: "Bạn đang đầu tư bao nhiêu cho bản thân mỗi năm?",
-      options: [
-        { text: "Ít hơn 2% thu nhập", value: 0 },
-        { text: "2–5% thu nhập", value: 5 },
-        { text: "Hơn 5% thu nhập", value: 10 },
-      ],
-    },
-    {
-      key: "q20",
-      question: "Bạn có đang chủ động thiết kế cuộc sống mơ ước của mình không?",
-      options: [
-        { text: "Không", value: 0 },
-        { text: "Đang bắt đầu", value: 5 },
-        { text: "Đã thiết kế và đang sống theo", value: 10 },
+        { text: "Rất sợ, luôn phải giấu kín", value: 0 },
+        { text: "Phải lựa lời cẩn thận mới dám nói", value: 5 },
+        { text: "Tự tin thể hiện ý tưởng", value: 10 },
       ],
     },
   ];
-  
+
   const [answers, setAnswers] = useState<{ [key: string]: number }>({});
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [submitted, setSubmitted] = useState(false);
