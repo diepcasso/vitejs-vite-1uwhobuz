@@ -112,7 +112,7 @@ export default function FreedomQuiz() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-blue-100 p-4 sm:p-6">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">CASSO Freedom Quiz</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">Freedom Quiz</h1>
       {submitted ? (
         <div className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-2xl text-center space-y-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-green-600">{result.level}</h2>
